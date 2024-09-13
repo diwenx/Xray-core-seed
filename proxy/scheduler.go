@@ -102,6 +102,6 @@ func(s *Scheduler) exampleIndependentScheduler() {
 			return
 		}
 		s.Trigger <- 1 // send fake buffer if no pending
-		time.Sleep(500 * time.Millisecond)
+		time.Sleep(20 * time.Millisecond)
 	}
 }
